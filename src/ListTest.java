@@ -2,7 +2,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class ListTest {
     public static void main(String[] args) {
 
         List<String> compras = new ArrayList<>();
@@ -29,8 +29,11 @@ public class Main {
         //6- Recuperar o item da compra da posição 0
         compras.indexOf(0);
 
+        //Exibir o item da lista de  compra que esta na posição 0
+        System.out.println("item posição 0" + compras.get(0));
+
         //7- Apagar toda lista de compra
-        compras.removeAll(compras);
+        compras.clear();
 
         //8- Adicionar itens
         compras.add("Playstation");
@@ -42,7 +45,15 @@ public class Main {
         compras.set(0,"Chocolate");
 
         //10- Achar a posição do primeiro Chocolate
+        System.out.println("Posição do chocolate: " + compras.indexOf("Chocolate"));
 
+        //Criar uma sublista dos dois primeiros itens da lista
+        List<String> subLista = compras.subList(0, 2);
+        System.out.println("\nSublista");
+        for (String item : subLista){
+            System.out.println(item);
+        }
+        System.out.println("\nLista Completa");
         //Percorrer a lista
         for (String item : compras){
             System.out.println(item);
