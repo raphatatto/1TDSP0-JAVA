@@ -56,5 +56,7 @@ public class Exercicio02 {
         System.out.println("Quantidade de alunos: " + alunos.size());
         System.out.println("Media de notas: " + somaMediaGeral/alunos.size());
         System.out.println("Média de idade: " + somaIdadeGeral/alunos.size());
+        System.out.println("Maior idade: " + maiorIdade);
+        System.out.println("menor idade: " + menorIdade);
     }
 }
